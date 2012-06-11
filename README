@@ -1,11 +1,14 @@
+Note: This is currently a direct clone of the SourceForge project at http://py-jack.sourceforge.net/
+
+Original readme follows.
+------------------------
+
 PyJack version 0.5.2
 Original code by Andrew W. Schmeder <andy@a2hd.com>, in2003
 Transport support by Il'dar Akhmetgaleev <akhilman at gmail dot com>, in Jan 14 2008
 Revision and packaging by falkTX <falktx@gmail.com>, in Feb 2010
 Implemented changes by the Clam Team <falktx@gmail.com>, in Mar 2010
 More Jack implementations by falkTX <falktx@gmail.com>, in Apr 2010
-
-Migrated to git by Kevin Nelson <kevin@rkn.la>, in June 2012
 
 This is open source software released under the GPL license.
 The full text of this license is found in the file 'LICENSE',
