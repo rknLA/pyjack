@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+clean::
+	rm -rf build
+
+install/python-jack::
+	python setup.py build
+	mkdir -p debian/python-jack/usr/lib/python2.6/dist-packages/
+	cp build/lib.linux-*/* debian/python-jack/usr/lib/python2.6/dist-packages/

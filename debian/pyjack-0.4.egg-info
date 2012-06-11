@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyjack
+Version: 0.5
+Summary: Python binding for the Jack Audio Server
+Home-page: http://www.a2hd.com/software
+Author: Andrew W. Schmeder, falkTX
+Author-email: andy@a2hd.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

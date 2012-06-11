@@ -1,0 +1,31 @@
+Source: pyjack
+Section: python
+Priority: optional
+Maintainer: falkTX <falktx@gmail.com>
+Build-Depends: cdbs, debhelper (>= 7), libjack-dev,
+ python2.6, python-numpy, python-dev
+Standards-Version: 3.8.4
+
+Package: python-jack
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, jackd, python-numpy
+Recommends: python-jack-examples
+Description: Jack modules for python
+ PyJack2 is a module written in C which exposes the Jack API to Python.
+ For information about Jack see http://jackit.sourceforge.net.
+ This enables a Python program to connect to and interact with pro-audio
+ applications which use the Jack Audio Server.
+ .
+ This package contains the python modules
+
+Package: python-jack-demos
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, python-jack
+Suggests: python-scipy, python-qt4
+Description: Jack modules for python
+ PyJack2 is a module written in C which exposes the Jack API to Python.
+ For information about Jack see http://jackit.sourceforge.net.
+ This enables a Python program to connect to and interact with pro-audio
+ applications which use the Jack Audio Server.
+ .
+ This package provides a set of demos/examples of python-jack usage

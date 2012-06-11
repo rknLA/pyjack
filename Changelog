@@ -1,0 +1,43 @@
+PyJack Changelog
+
+version 0.5.2:
+ * PyJack never raises JackInputSyncError
+ * Get "numpy/arrayobject.h" path from numpy
+
+version 0.5.1:
+ * Added check for Jack2 (disable some functions if not)
+    (fixes compilation on older Jack versions)
+
+version 0.5:
+ * Implemented "get_version" (not working ?)
+ * Implemented "get_port_short_name"
+ * Implemented "port_is_mine"
+ * Implemented "set_buffer_size"
+ * Implemented "set_sync_timeout"
+ * Implemented "buffer_size_callback"
+ * Implemented "xrun_callback"
+ * Fixed auto-selecting 1st available port when port name is empty
+ * Disabled "get_version_string" for now (requires a very recent Jack version)
+ * Other very small fixes
+
+version 0.4:
+ * Implemented "get_version_string"
+ * Implemented "get_cpu_load"
+ * Implemented "get_port_type"
+ * Implemented "get_port_type_id"
+ * Implemented "is_realtime"
+
+version 0.3:
+* Implemented changes from the clam team branch:  (many thanks!)
+  - Added a get_client_name function
+  - Fixed SEGFAULT when connecting unexisting ports in deactivated state
+  - Fixed memory corruption (free of not owned memory) when connecting ports in deactivated state
+  - Fix: output_pipe[0] was not initialized
+  - Connecting already connected or disconnecting already disconnected do not throw
+  - Using numpy package instead of the deprecated Numeric
+  - Capture.py: use scipy to save the captured audio
+  - Disconnecting non existing ports gives a more informative message
+* Updated the demos (and kicked "jack_bus_connect.py")
+* Added a simple GUI demo for controlling Transport
+* Allow add/remove ports while client is still active (otherwise it won't work)
+* Added this Changelog

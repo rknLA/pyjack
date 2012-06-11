@@ -1,0 +1,11 @@
+--- pyjack.c.old	2010-04-21 13:37:01.000000000 +0100
++++ pyjack.c	2010-04-21 13:37:16.202977932 +0100
+@@ -40,7 +40,7 @@
+ // Global shared data for jack
+ 
+ /* Uncomment the next line if you have Jack2 */
+-// #define JACK2 1
++#define JACK2 1
+ 
+ 
+ #define PYJACK_MAX_PORTS 256

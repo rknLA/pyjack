@@ -1,0 +1,29 @@
+-------------------
+ HOW TO USE THIS SCRIPT
+--------------------------
+
+
+First, make sure you have sucessufully installed:
+ - Blender (2.49)
+ - PyJack
+ - Jack
+
+
+To enable this script in blender:
+ - copy the script to ~/.blender/scripts
+ - start blender
+ - open a script window, and "update menus"
+ - Select Misc -> "Jack Transport"
+
+
+A new, small widget will appear:
+
+s | < | > |   play   | x
+
+ "s" will make transport to go 00:00;
+ "<" and ">" will fast backwards forward;
+ "play"/"pause" is obvious;
+ "x" will stop the script
+
+
+Enjoy!

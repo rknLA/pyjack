@@ -1,0 +1,24 @@
+PyJack
+TODO Items
+---------------------------------------------
+
+- Make variable buffering within the PyJack client independent of the
+  Jack server's buffer size; this would enable the PyJack client to run
+  jack.process with larger buffers while still working with apps which 
+  require small buffers.
+
+- May need a select call with timeout in jack.process()
+  Otherwise, if the jack server shutsdown or SIGHUPS this call might
+  wait forever on the socket read.
+
+- Monitoring?
+  I don't really understand how monitoring is supposed to work.
+  
+- Do we need sample rate events?
+  Will the sample rate ever change in the middle of a process,
+  or is it a fixed value like buffer size?
+  
+- Peak/Power monitoring
+   
+Contributions are welcome!
+
