@@ -613,7 +613,8 @@ static int jack_port_connected_to_extern(const pyjack_client_t * client,
     if (existing_connections) {
         int i; // non C99 nonsense
         for (i = 0; existing_connections[i]; i++) {
-            return strcmp(existing_connections[i], dst_name) == 0;
+            if (strcmp(existing_connections[i], dst_name) == 0)
+                return 1;
         }
     }
     return 0;
@@ -647,7 +648,7 @@ static PyObject* port_disconnect(PyObject* self, PyObject* args)
     }
 
     if(jack_port_connected_to_extern(client, src, dst_name)) {
-        if (jack_disconnect(client->pjc, src_name, dst_name))	{
+        if (jack_disconnect(client->pjc, src_name, dst_name)) {
             PyErr_SetString(JackError, "Failed to disconnect ports.");
             return NULL;
         }
